@@ -101,6 +101,7 @@
             bt_today.TabIndex = 1;
             bt_today.Text = "today";
             bt_today.UseVisualStyleBackColor = true;
+            bt_today.Click += bt_today_Click;
             // 
             // dtp_day
             // 
@@ -110,6 +111,7 @@
             dtp_day.Name = "dtp_day";
             dtp_day.Size = new Size(334, 34);
             dtp_day.TabIndex = 0;
+            dtp_day.ValueChanged += dtp_day_ValueChanged;
             // 
             // panel2
             // 
@@ -152,6 +154,7 @@
             bt_next.TabIndex = 3;
             bt_next.Text = ">>";
             bt_next.UseVisualStyleBackColor = true;
+            bt_next.Click += bt_next_Click;
             // 
             // bt_pre
             // 
@@ -162,6 +165,7 @@
             bt_pre.TabIndex = 2;
             bt_pre.Text = "<<";
             bt_pre.UseVisualStyleBackColor = true;
+            bt_pre.Click += bt_pre_Click;
             // 
             // bt_Sunday
             // 
