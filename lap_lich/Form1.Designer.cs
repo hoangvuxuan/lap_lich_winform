@@ -202,6 +202,7 @@
             bt_thursday.TabIndex = 3;
             bt_thursday.Text = "Thursday";
             bt_thursday.UseVisualStyleBackColor = true;
+            bt_thursday.Click += bt_thursday_Click;
             // 
             // bt_wednesday
             // 
@@ -238,6 +239,7 @@
             Controls.Add(panel1);
             Name = "Form1";
             Text = "Form1";
+            FormClosing += Form1_FormClosing;
             panel1.ResumeLayout(false);
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
