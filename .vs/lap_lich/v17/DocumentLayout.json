@@ -3,20 +3,36 @@
   "WorkspaceRootPath": "D:\\c#\\lap_lich\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CB94DE91-8699-4942-A852-E1673CB89FE9}|lap_lich\\lap_lich.csproj|d:\\c#\\lap_lich\\lap_lich\\a_job.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB94DE91-8699-4942-A852-E1673CB89FE9}|lap_lich\\lap_lich.csproj|solutionrelative:lap_lich\\a_job.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CB94DE91-8699-4942-A852-E1673CB89FE9}|lap_lich\\lap_lich.csproj|d:\\c#\\lap_lich\\lap_lich\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CB94DE91-8699-4942-A852-E1673CB89FE9}|lap_lich\\lap_lich.csproj|solutionrelative:lap_lich\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB94DE91-8699-4942-A852-E1673CB89FE9}|lap_lich\\lap_lich.csproj|d:\\c#\\lap_lich\\lap_lich\\all_class\\plan_data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB94DE91-8699-4942-A852-E1673CB89FE9}|lap_lich\\lap_lich.csproj|solutionrelative:lap_lich\\all_class\\plan_data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CB94DE91-8699-4942-A852-E1673CB89FE9}|lap_lich\\lap_lich.csproj|d:\\c#\\lap_lich\\lap_lich\\daily_plan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB94DE91-8699-4942-A852-E1673CB89FE9}|lap_lich\\lap_lich.csproj|solutionrelative:lap_lich\\daily_plan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB94DE91-8699-4942-A852-E1673CB89FE9}|lap_lich\\lap_lich.csproj|d:\\c#\\lap_lich\\lap_lich\\all_class\\plain_item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CB94DE91-8699-4942-A852-E1673CB89FE9}|lap_lich\\lap_lich.csproj|D:\\c#\\lap_lich\\lap_lich\\all_class\\plain_item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CB94DE91-8699-4942-A852-E1673CB89FE9}|lap_lich\\lap_lich.csproj|solutionrelative:lap_lich\\all_class\\plain_item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB94DE91-8699-4942-A852-E1673CB89FE9}|lap_lich\\lap_lich.csproj|D:\\c#\\lap_lich\\lap_lich\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{CB94DE91-8699-4942-A852-E1673CB89FE9}|lap_lich\\lap_lich.csproj|d:\\c#\\lap_lich\\lap_lich\\daily_plan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CB94DE91-8699-4942-A852-E1673CB89FE9}|lap_lich\\lap_lich.csproj|solutionrelative:lap_lich\\daily_plan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB94DE91-8699-4942-A852-E1673CB89FE9}|lap_lich\\lap_lich.csproj|d:\\c#\\lap_lich\\lap_lich\\a_job.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CB94DE91-8699-4942-A852-E1673CB89FE9}|lap_lich\\lap_lich.csproj|solutionrelative:lap_lich\\a_job.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB94DE91-8699-4942-A852-E1673CB89FE9}|lap_lich\\lap_lich.csproj|d:\\c#\\lap_lich\\lap_lich\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{CB94DE91-8699-4942-A852-E1673CB89FE9}|lap_lich\\lap_lich.csproj|solutionrelative:lap_lich\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB94DE91-8699-4942-A852-E1673CB89FE9}|lap_lich\\lap_lich.csproj|d:\\c#\\lap_lich\\lap_lich\\all_class\\static_class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB94DE91-8699-4942-A852-E1673CB89FE9}|lap_lich\\lap_lich.csproj|solutionrelative:lap_lich\\all_class\\static_class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,30 +42,66 @@
       "DocumentGroups": [
         {
           "DockedWidth": 285,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "plan_data.cs",
-              "DocumentMoniker": "D:\\c#\\lap_lich\\lap_lich\\all_class\\plan_data.cs",
-              "RelativeDocumentMoniker": "lap_lich\\all_class\\plan_data.cs",
-              "ToolTip": "D:\\c#\\lap_lich\\lap_lich\\all_class\\plan_data.cs",
-              "RelativeToolTip": "lap_lich\\all_class\\plan_data.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAAwA0AAAAqAAAA",
+              "DocumentIndex": 7,
+              "Title": "static_class.cs",
+              "DocumentMoniker": "D:\\c#\\lap_lich\\lap_lich\\all_class\\static_class.cs",
+              "RelativeDocumentMoniker": "lap_lich\\all_class\\static_class.cs",
+              "ToolTip": "D:\\c#\\lap_lich\\lap_lich\\all_class\\static_class.cs",
+              "RelativeToolTip": "lap_lich\\all_class\\static_class.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAYwCkAAABLAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T07:59:33.368Z",
+              "WhenOpened": "2024-04-24T15:03:06.597Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
+              "Title": "A_job.cs [Design]",
+              "DocumentMoniker": "D:\\c#\\lap_lich\\lap_lich\\A_job.cs",
+              "RelativeDocumentMoniker": "lap_lich\\A_job.cs",
+              "ToolTip": "D:\\c#\\lap_lich\\lap_lich\\A_job.cs [Design]",
+              "RelativeToolTip": "lap_lich\\A_job.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T15:39:05.678Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Daily_Plan.cs [Design]",
+              "DocumentMoniker": "D:\\c#\\lap_lich\\lap_lich\\Daily_Plan.cs",
+              "RelativeDocumentMoniker": "lap_lich\\Daily_Plan.cs",
+              "ToolTip": "D:\\c#\\lap_lich\\lap_lich\\Daily_Plan.cs [Design]",
+              "RelativeToolTip": "lap_lich\\Daily_Plan.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T15:38:50.772Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\c#\\lap_lich\\lap_lich\\Form1.cs",
+              "RelativeDocumentMoniker": "lap_lich\\Form1.cs",
+              "ToolTip": "D:\\c#\\lap_lich\\lap_lich\\Form1.cs [Design]",
+              "RelativeToolTip": "lap_lich\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T14:42:46.323Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "plain_item.cs",
               "DocumentMoniker": "D:\\c#\\lap_lich\\lap_lich\\all_class\\plain_item.cs",
               "RelativeDocumentMoniker": "lap_lich\\all_class\\plain_item.cs",
               "ToolTip": "D:\\c#\\lap_lich\\lap_lich\\all_class\\plain_item.cs",
               "RelativeToolTip": "lap_lich\\all_class\\plain_item.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAgAAAAKAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAABLAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-23T07:55:17.19Z",
               "EditorCaption": ""
@@ -57,27 +109,41 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "A_job.cs",
+              "DocumentMoniker": "D:\\c#\\lap_lich\\lap_lich\\A_job.cs",
+              "RelativeDocumentMoniker": "lap_lich\\A_job.cs",
+              "ToolTip": "D:\\c#\\lap_lich\\lap_lich\\A_job.cs",
+              "RelativeToolTip": "lap_lich\\A_job.cs",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAewEgAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T12:50:00.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "D:\\c#\\lap_lich\\lap_lich\\Form1.cs",
               "RelativeDocumentMoniker": "lap_lich\\Form1.cs",
               "ToolTip": "D:\\c#\\lap_lich\\lap_lich\\Form1.cs",
               "RelativeToolTip": "lap_lich\\Form1.cs",
-              "ViewState": "AQIAAOEAAAAAAAAAAAAuwB0BAAAaAAAA",
+              "ViewState": "AQIAAPIAAAAAAAAAAAAEwBsAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T08:45:01.778Z",
+              "WhenOpened": "2024-04-24T12:24:48.649Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "D:\\c#\\lap_lich\\lap_lich\\Form1.cs",
-              "RelativeDocumentMoniker": "lap_lich\\Form1.cs",
-              "ToolTip": "D:\\c#\\lap_lich\\lap_lich\\Form1.cs [Design]",
-              "RelativeToolTip": "lap_lich\\Form1.cs [Design]",
+              "DocumentIndex": 2,
+              "Title": "Daily_Plan.cs",
+              "DocumentMoniker": "D:\\c#\\lap_lich\\lap_lich\\Daily_Plan.cs",
+              "RelativeDocumentMoniker": "lap_lich\\Daily_Plan.cs",
+              "ToolTip": "D:\\c#\\lap_lich\\lap_lich\\Daily_Plan.cs",
+              "RelativeToolTip": "lap_lich\\Daily_Plan.cs",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAswFkAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T20:47:23.047Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-24T12:21:22.535Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -238,6 +238,7 @@
             ClientSize = new Size(953, 573);
             Controls.Add(panel1);
             Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             FormClosing += Form1_FormClosing;
             panel1.ResumeLayout(false);

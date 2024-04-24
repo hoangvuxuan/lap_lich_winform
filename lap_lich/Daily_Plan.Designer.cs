@@ -70,7 +70,7 @@
             dp_bt_next.TabIndex = 4;
             dp_bt_next.Text = ">>";
             dp_bt_next.UseVisualStyleBackColor = true;
-            dp_bt_next.Click += button1_Click;
+            dp_bt_next.Click += dp_bt_next_Click;
             // 
             // dp_bt_pre
             // 
@@ -81,6 +81,7 @@
             dp_bt_pre.TabIndex = 3;
             dp_bt_pre.Text = "<<";
             dp_bt_pre.UseVisualStyleBackColor = true;
+            dp_bt_pre.Click += dp_bt_pre_Click;
             // 
             // dp_dtp_day
             // 
@@ -89,6 +90,7 @@
             dp_dtp_day.Name = "dp_dtp_day";
             dp_dtp_day.Size = new Size(333, 34);
             dp_dtp_day.TabIndex = 0;
+            dp_dtp_day.ValueChanged += dp_dtp_day_ValueChanged;
             // 
             // dp_p_show_job
             // 
@@ -112,12 +114,14 @@
             ms_add_job.Name = "ms_add_job";
             ms_add_job.Size = new Size(84, 24);
             ms_add_job.Text = "ADD JOB";
+            ms_add_job.Click += ms_add_job_Click;
             // 
             // ms_today
             // 
             ms_today.Name = "ms_today";
             ms_today.Size = new Size(69, 24);
             ms_today.Text = "TODAY";
+            ms_today.Click += ms_today_Click;
             // 
             // Daily_Plan
             // 
@@ -128,7 +132,9 @@
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             Name = "Daily_Plan";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Daily_Plan";
+            FormClosing += Daily_Plan_FormClosing;
             panel1.ResumeLayout(false);
             panel3.ResumeLayout(false);
             menuStrip1.ResumeLayout(false);

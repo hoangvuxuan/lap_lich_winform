@@ -1,47 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plan_data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <List_job>
-    <plain_item>
-      <Title>cau troi khan phajt</Title>
-      <Job>2222090</Job>
-      <Start_time>
-        <X>4</X>
-        <Y>0</Y>
-      </Start_time>
-      <End_time>
-        <X>12</X>
-        <Y>12</Y>
-      </End_time>
-      <Status>doing</Status>
-      <Date>2024-04-23T16:32:17.5086187+07:00</Date>
-    </plain_item>
-  </List_job>
-</plan_data>itle>
-      <Job>vuuu6676776</Job>
-      <Start_time>
-        <X>4</X>
-        <Y>0</Y>
-      </Start_time>
-      <End_time>
-        <X>12</X>
-        <Y>12</Y>
-      </End_time>
-      <Status>doing</Status>
-      <Date>2024-04-23T16:29:21.0945252+07:00</Date>
-    </plain_item>
-    <plain_item>
-      <Title>4444</Title>
-      <Job>vuuu6676776</Job>
-      <Start_time>
-        <X>4</X>
-        <Y>0</Y>
-      </Start_time>
-      <End_time>
-        <X>12</X>
-        <Y>12</Y>
-      </End_time>
-      <Status>doing</Status>
-      <Date>2024-04-23T16:29:21.0945254+07:00</Date>
-    </plain_item>
-  </List_job>
+  <List_job />
 </plan_data>

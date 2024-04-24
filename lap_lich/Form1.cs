@@ -11,7 +11,7 @@ namespace lap_lich
 
         private List<string> day_of_week = new List<string>() { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" };
 
-
+        private plan_data plan_job;
 
         private string file_path = "data.xml";
 
@@ -21,10 +21,12 @@ namespace lap_lich
             show_matrix();
             try
             {
-                deserialize_xml(file_path);
+                plan_job = static_class.deserialize_xml(file_path) as plan_data;
+                 
             }
             catch
             {
+                MessageBox.Show("fuck");
             }
 
         }
@@ -43,6 +45,7 @@ namespace lap_lich
                 Height = 59,
                 Location = new Point(0, 0)
             };
+            old_bt.Click += Bt_show_dp_from;
 
 
             for (int i = 0; i <= 5; i++)
@@ -62,6 +65,7 @@ namespace lap_lich
                         Height = 59,
                         Location = new Point(old_bt.Location.X + 95 + 6, old_bt.Location.Y)
                     };
+                    new_bt.Click += Bt_show_dp_from;
 
                     p_matrix.Controls.Add(new_bt);
 
@@ -79,6 +83,7 @@ namespace lap_lich
                     Height = 59,
                     Location = new Point(0, old_bt.Location.Y + 59 + 6)
                 };
+                old_bt.Click += Bt_show_dp_from;
 
             }
 
@@ -108,14 +113,7 @@ namespace lap_lich
             }
         }
 
-        private bool is_euqal_day(DateTime dt1, DateTime dt2)
-        {
-            if (dt1.Year == dt2.Year && dt1.Month == dt2.Month && dt1.Day == dt2.Day)
-            {
-                return true;
-            }
-            return false;
-        }
+
 
         public void add_num_to_matrix(DateTime date)
         {
@@ -128,15 +126,17 @@ namespace lap_lich
                 int colum = day_of_week.IndexOf(use_day.DayOfWeek.ToString());
 
                 matrix[line][colum].Click += Bt_Click;
+
                 matrix[line][colum].Text = i.ToString();
 
-                if (is_euqal_day(use_day, DateTime.Now))
+                if (static_class.is_euqal_day(use_day, DateTime.Now))
                 {
                     matrix[line][colum].BackColor = Color.GreenYellow;
                 }
-                if (is_euqal_day(use_day, dtp_day.Value))
+                if (static_class.is_euqal_day(use_day, dtp_day.Value))
                 {
                     matrix[line][colum].BackColor = Color.HotPink;
+
                 }
 
                 if (colum >= 6)
@@ -152,6 +152,21 @@ namespace lap_lich
         {
             int day = Convert.ToInt32((sender as Button).Text);
             dtp_day.Value = new DateTime(dtp_day.Value.Year, dtp_day.Value.Month, day);
+
+        }
+
+        private void Bt_show_dp_from(object? sender, EventArgs e)
+        {
+            try
+            {
+                int day = Convert.ToInt32((sender as Button).Text);
+                Daily_Plan daily_Plan = new Daily_Plan(new DateTime(dtp_day.Value.Year, dtp_day.Value.Month, day), plan_job);
+                daily_Plan.ShowDialog();
+            }
+            catch { }
+
+
+
         }
 
         void clear_matrix()
@@ -225,67 +240,69 @@ namespace lap_lich
         }
 
 
-        private object deserialize_xml(string file_padth)
-        {
-            FileStream fs = new FileStream(file_padth, FileMode.Open, FileAccess.Read);
-            try
-            {
-                XmlSerializer sr = new XmlSerializer(typeof(plan_data));
 
-                object result = sr.Deserialize(fs);
-                fs.Close();
-                return result;
-            }
-            catch (Exception ex)
-            {
-                fs.Close();
-                throw ex;
-            }
-
-        }
-
-
-        private void serialize_to_xml(object obj, string file_padth)
-        {
-            FileStream fs = new FileStream(file_padth, FileMode.OpenOrCreate, FileAccess.Write);
-            XmlSerializer sr = new XmlSerializer(typeof(plan_data));
-  
-
-            sr.Serialize(fs, obj);
-            fs.Close();
-            
-        }
 
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            
-            //serialize_to_xml(plan_job, file_path);
+
+            static_class.serialize_to_xml(plan_job, "data.xml");
         }
 
 
-        private plan_data plan_job = new plan_data();
+
         void set_default()
         {
-
+            plan_job = new plan_data();
             plan_job.List_job = new List<plain_item>();
             plan_job.List_job.Add(new plain_item()
             {
-                Title = "cau troi khan phajt",
+                Title = "cau troi khan phajt 1",
                 Date = DateTime.Now,
                 Start_time = new Point(4, 0),
                 End_time = new Point(12, 12),
-                Job = "2222090",
+                Job = "1",
+                Status = plain_item.list_status[(int)e_plan_item.doing]
+            });
+
+            plan_job.List_job.Add(new plain_item()
+            {
+                Title = "cau troi khan phajt 2",
+                Date = DateTime.Now,
+                Start_time = new Point(4, 0),
+                End_time = new Point(12, 12),
+                Job = "2",
+                Status = plain_item.list_status[(int)e_plan_item.doing]
+            });
+
+            plan_job.List_job.Add(new plain_item()
+            {
+                Title = "cau troi khan phajt 3",
+                Date = DateTime.Now.AddDays(+1),
+                Start_time = new Point(4, 0),
+                End_time = new Point(12, 12),
+                Job = "3",
+                Status = plain_item.list_status[(int)e_plan_item.doing]
+            });
+
+            plan_job.List_job.Add(new plain_item()
+            {
+                Title = "cau troi khan phajt4 ",
+                Date = DateTime.Now.AddDays(+1),
+                Start_time = new Point(4, 0),
+                End_time = new Point(12, 12),
+                Job = "4",
                 Status = plain_item.list_status[(int)e_plan_item.doing]
             });
 
         }
         private void bt_thursday_Click(object sender, EventArgs e)
         {
-
             set_default();
-            serialize_to_xml(plan_job, file_path);
-             
+            static_class.serialize_to_xml(plan_job, file_path);
+
         }
+
+     
     }
 }
