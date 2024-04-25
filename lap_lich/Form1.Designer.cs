@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             panel1 = new Panel();
             panel3 = new Panel();
-            nup_notifiy = new NumericUpDown();
-            CB_notify = new CheckBox();
             bt_today = new Button();
             dtp_day = new DateTimePicker();
             panel2 = new Panel();
@@ -46,9 +46,10 @@
             bt_wednesday = new Button();
             bt_tuesday = new Button();
             bt_monday = new Button();
+            timer1 = new System.Windows.Forms.Timer(components);
+            notifyIcon1 = new NotifyIcon(components);
             panel1.SuspendLayout();
             panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)nup_notifiy).BeginInit();
             panel2.SuspendLayout();
             panel4.SuspendLayout();
             SuspendLayout();
@@ -64,8 +65,6 @@
             // 
             // panel3
             // 
-            panel3.Controls.Add(nup_notifiy);
-            panel3.Controls.Add(CB_notify);
             panel3.Controls.Add(bt_today);
             panel3.Controls.Add(dtp_day);
             panel3.Location = new Point(5, 3);
@@ -73,29 +72,9 @@
             panel3.Size = new Size(920, 60);
             panel3.TabIndex = 1;
             // 
-            // nup_notifiy
-            // 
-            nup_notifiy.Location = new Point(81, 17);
-            nup_notifiy.Maximum = new decimal(new int[] { 3600, 0, 0, 0 });
-            nup_notifiy.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
-            nup_notifiy.Name = "nup_notifiy";
-            nup_notifiy.Size = new Size(50, 27);
-            nup_notifiy.TabIndex = 3;
-            nup_notifiy.Value = new decimal(new int[] { 1, 0, 0, 0 });
-            // 
-            // CB_notify
-            // 
-            CB_notify.AutoSize = true;
-            CB_notify.Location = new Point(3, 18);
-            CB_notify.Name = "CB_notify";
-            CB_notify.Size = new Size(72, 24);
-            CB_notify.TabIndex = 2;
-            CB_notify.Text = "Notify";
-            CB_notify.UseVisualStyleBackColor = true;
-            // 
             // bt_today
             // 
-            bt_today.Location = new Point(668, 12);
+            bt_today.Location = new Point(577, 12);
             bt_today.Name = "bt_today";
             bt_today.Size = new Size(102, 34);
             bt_today.TabIndex = 1;
@@ -107,7 +86,7 @@
             // 
             dtp_day.CalendarFont = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             dtp_day.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dtp_day.Location = new Point(328, 12);
+            dtp_day.Location = new Point(237, 12);
             dtp_day.Name = "dtp_day";
             dtp_day.Size = new Size(334, 34);
             dtp_day.TabIndex = 0;
@@ -202,7 +181,6 @@
             bt_thursday.TabIndex = 3;
             bt_thursday.Text = "Thursday";
             bt_thursday.UseVisualStyleBackColor = true;
-            bt_thursday.Click += bt_thursday_Click;
             // 
             // bt_wednesday
             // 
@@ -231,6 +209,18 @@
             bt_monday.Text = "Monday";
             bt_monday.UseVisualStyleBackColor = true;
             // 
+            // timer1
+            // 
+            timer1.Enabled = true;
+            timer1.Interval = 10000;
+            timer1.Tick += timer1_Tick;
+            // 
+            // notifyIcon1
+            // 
+            notifyIcon1.Icon = (Icon)resources.GetObject("notifyIcon1.Icon");
+            notifyIcon1.Text = "notify";
+            notifyIcon1.Visible = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -243,8 +233,6 @@
             FormClosing += Form1_FormClosing;
             panel1.ResumeLayout(false);
             panel3.ResumeLayout(false);
-            panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)nup_notifiy).EndInit();
             panel2.ResumeLayout(false);
             panel4.ResumeLayout(false);
             ResumeLayout(false);
@@ -267,8 +255,8 @@
         private Button bt_tuesday;
         private Button bt_monday;
         private Button bt_pre;
-        private NumericUpDown nup_notifiy;
-        private CheckBox CB_notify;
         private Button bt_next;
+        private System.Windows.Forms.Timer timer1;
+        private NotifyIcon notifyIcon1;
     }
 }

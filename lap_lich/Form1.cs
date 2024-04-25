@@ -1,4 +1,5 @@
 ﻿using lap_lich.all_class;
+using Microsoft.Win32;
 using System.Xml.Serialization;
 using static lap_lich.all_class.plain_item;
 using static System.Runtime.InteropServices.JavaScript.JSType;
@@ -13,16 +14,38 @@ namespace lap_lich
 
         private plan_data plan_job;
 
+        private List<plain_item> today_job;
+
         private string file_path = "data.xml";
 
         public Form1()
         {
             InitializeComponent();
             show_matrix();
+
+            RegistryKey regkey = Registry.CurrentUser.CreateSubKey("Software\\LapLich");
+            //mo registry khoi dong cung win
+            RegistryKey regstart = Registry.CurrentUser.CreateSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run");
+            string keyvalue = "1";
+            //string subkey = "Software\\ManhQuyen";
+            try
+            {
+                //chen gia tri key
+                regkey.SetValue("Index", keyvalue);
+                //regstart.SetValue("taoregistrytronghethong", "E:\\Studing\\Bai Tap\\CSharp\\Channel 4\\bai temp\\tao registry trong he thong\\tao registry trong he thong\\bin\\Debug\\tao registry trong he thong.exe");
+                regstart.SetValue("LapLich", Application.StartupPath + "\\lap_lich.exe");
+                ////dong tien trinh ghi key
+                //regkey.Close();
+            }
+            catch (System.Exception ex)
+            {
+            }
+
             try
             {
                 plan_job = static_class.deserialize_xml(file_path) as plan_data;
-                 
+                today_job = new List<plain_item>();
+                set_today_job();
             }
             catch
             {
@@ -31,7 +54,16 @@ namespace lap_lich
 
         }
 
-        //demo
+        public void set_today_job()
+        {
+            foreach(var i in plan_job.List_job)
+            {
+                if(static_class.is_euqal_day(i.Date, DateTime.Now))
+                {
+                    today_job.Add(i);
+                }
+            }
+        }
 
 
         public void show_matrix()
@@ -239,70 +271,29 @@ namespace lap_lich
 
         }
 
-
-
-
-
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
 
             static_class.serialize_to_xml(plan_job, "data.xml");
         }
 
-
-
-        void set_default()
+        private void timer1_Tick(object sender, EventArgs e)
         {
-            plan_job = new plan_data();
-            plan_job.List_job = new List<plain_item>();
-            plan_job.List_job.Add(new plain_item()
+            DateTime dt = DateTime.Now.AddMinutes(-10);
+            foreach(var i in today_job)
             {
-                Title = "cau troi khan phajt 1",
-                Date = DateTime.Now,
-                Start_time = new Point(4, 0),
-                End_time = new Point(12, 12),
-                Job = "1",
-                Status = plain_item.list_status[(int)e_plan_item.doing]
-            });
+                if(i.Start_time.X == DateTime.Now.Hour && i.Start_time.Y == DateTime.Now.Minute)
+                {
+                    notifyIcon1.ShowBalloonTip(60000, "lich cong viec", i.Job, ToolTipIcon.Info);
+                }
 
-            plan_job.List_job.Add(new plain_item()
-            {
-                Title = "cau troi khan phajt 2",
-                Date = DateTime.Now,
-                Start_time = new Point(4, 0),
-                End_time = new Point(12, 12),
-                Job = "2",
-                Status = plain_item.list_status[(int)e_plan_item.doing]
-            });
-
-            plan_job.List_job.Add(new plain_item()
-            {
-                Title = "cau troi khan phajt 3",
-                Date = DateTime.Now.AddDays(+1),
-                Start_time = new Point(4, 0),
-                End_time = new Point(12, 12),
-                Job = "3",
-                Status = plain_item.list_status[(int)e_plan_item.doing]
-            });
-
-            plan_job.List_job.Add(new plain_item()
-            {
-                Title = "cau troi khan phajt4 ",
-                Date = DateTime.Now.AddDays(+1),
-                Start_time = new Point(4, 0),
-                End_time = new Point(12, 12),
-                Job = "4",
-                Status = plain_item.list_status[(int)e_plan_item.doing]
-            });
-
-        }
-        private void bt_thursday_Click(object sender, EventArgs e)
-        {
-            set_default();
-            static_class.serialize_to_xml(plan_job, file_path);
-
+                if(i.Start_time.X == dt.Hour && i.Start_time.Y == dt.Minute)
+                {
+                    notifyIcon1.ShowBalloonTip(60000, "lich cong viec", "con 10 phut: " + i.Job, ToolTipIcon.Info);
+                }
+            }
+                      
         }
 
-     
     }
 }

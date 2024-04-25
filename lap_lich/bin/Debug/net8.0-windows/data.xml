@@ -1,4 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plan_data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <List_job />
+  <List_job>
+    <plain_item>
+      <Title>title: học mạng c# bài 46</Title>
+      <Job>học mạng c# bài 46</Job>
+      <Start_time>
+        <X>5</X>
+        <Y>0</Y>
+      </Start_time>
+      <End_time>
+        <X>6</X>
+        <Y>0</Y>
+      </End_time>
+      <Status>doing</Status>
+      <Date>2024-04-25T00:00:00</Date>
+    </plain_item>
+    <plain_item>
+      <Title>title: hoan thin app lap lich </Title>
+      <Job>hoan thin app lap lich </Job>
+      <Start_time>
+        <X>10</X>
+        <Y>0</Y>
+      </Start_time>
+      <End_time>
+        <X>11</X>
+        <Y>30</Y>
+      </End_time>
+      <Status>doing</Status>
+      <Date>2024-04-25T00:00:00</Date>
+    </plain_item>
+    <plain_item>
+      <Title>title: hoc mang c# bai 47</Title>
+      <Job>hoc mang c# bai 47</Job>
+      <Start_time>
+        <X>13</X>
+        <Y>0</Y>
+      </Start_time>
+      <End_time>
+        <X>14</X>
+        <Y>0</Y>
+      </End_time>
+      <Status>doing</Status>
+      <Date>2024-04-25T00:00:00</Date>
+    </plain_item>
+    <plain_item>
+      <Title>title: doc mai hoa</Title>
+      <Job>doc mai hoa</Job>
+      <Start_time>
+        <X>14</X>
+        <Y>0</Y>
+      </Start_time>
+      <End_time>
+        <X>14</X>
+        <Y>30</Y>
+      </End_time>
+      <Status>doing</Status>
+      <Date>2024-04-25T00:00:00</Date>
+    </plain_item>
+    <plain_item>
+      <Title>title: TCP/IP Client Server</Title>
+      <Job>TCP/IP Client Server</Job>
+      <Start_time>
+        <X>15</X>
+        <Y>0</Y>
+      </Start_time>
+      <End_time>
+        <X>16</X>
+        <Y>0</Y>
+      </End_time>
+      <Status>doing</Status>
+      <Date>2024-04-25T00:00:00</Date>
+    </plain_item>
+    <plain_item>
+      <Title>title: WPF MVVM Tutorial: Build An App with Data Binding and Commands</Title>
+      <Job>WPF MVVM Tutorial: Build An App with Data Binding and Commands</Job>
+      <Start_time>
+        <X>17</X>
+        <Y>0</Y>
+      </Start_time>
+      <End_time>
+        <X>20</X>
+        <Y>0</Y>
+      </End_time>
+      <Status>doing</Status>
+      <Date>2024-04-25T00:00:00</Date>
+    </plain_item>
+  </List_job>
 </plan_data>

@@ -45,8 +45,9 @@ namespace lap_lich
                         a_Job.Job_Update += A_Job_Job_Update;
                         a_Job.Job_Delete += A_Job_Job_Delete;
                         a_Job.Location = new Point(0, y);
-                        y += 84;
                         temp = y;
+                        y += 84;
+                        
                         dp_p_show_job.Controls.Add(a_Job);
                         
                     }
@@ -87,7 +88,11 @@ namespace lap_lich
 
         private void A_Job_Job_Update(object? sender, EventArgs e)
         {
-            (sender as plain_item).Date = dp_dtp_day.Value;
+            if(sender is plain_item)
+            {
+                (sender as plain_item).Date = dp_dtp_day.Value;
+            }
+            
         }
 
         private void Daily_Plan_FormClosing(object sender, FormClosingEventArgs e)
@@ -110,11 +115,11 @@ namespace lap_lich
             pi.Status = "doing";
             pi.Title = "title: " + dp_dtp_day.Value;
 
-            MessageBox.Show(pi.Date.ToString());
             plan_job.List_job.Add(pi);
             A_job a_Job = new A_job(pi);
             a_Job.Job_Update += A_Job_Job_Update;
             a_Job.Job_Delete += A_Job_Job_Delete;
+            temp += 85;
             a_Job.Location = new Point(0, temp);
             
 

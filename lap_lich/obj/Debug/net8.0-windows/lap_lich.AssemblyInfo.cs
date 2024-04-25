@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("lap_lich")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8e476140c8b2a7365e93c4e3ec1a2ee05b0b65c8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2fc896f03aa2d1b0bed230fe153def8d5ba7ccb9")]
 [assembly: System.Reflection.AssemblyProductAttribute("lap_lich")]
 [assembly: System.Reflection.AssemblyTitleAttribute("lap_lich")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
